@@ -1,6 +1,7 @@
 backend:
   name: git-gateway
   repo: casperleerink/mariette
+  branch: main
 public_folder: /assets
 media_library:
   name: cloudinary
