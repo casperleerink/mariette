@@ -1,0 +1,72 @@
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    position: relative;
+
+    .titleContainer {
+        width: 35%;
+        height: 4rem;
+        float: left;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $text-color;
+        // width: 100%;
+        background-color: $tertiary;
+        // grid-area: "title";
+        // justify-self: center;
+        // align-self: center;
+        font-size: 1.2rem;
+        font-weight: bold;
+        text-align: center;
+    }
+    .banner {
+        position: absolute;
+        top: 4rem;
+        left: 0;
+        width: 35%;
+        transition: width 0.3s;
+        background-color: $tertiary;
+        padding-bottom: 2rem;
+        overflow: hidden;
+        .dahlia {
+            opacity: 0.09;
+            width: 100%;
+            padding: 0 20%;
+            path {
+                pointer-events: all;
+            }
+            path:hover {
+                fill: $primary;
+            }
+        }
+        q {
+            display: block;
+            width: 100%;
+            padding: 0 2rem;
+            text-align: center;
+            font-size: 1.2rem;
+        }
+        em {
+            display: block;
+            width: 100%;
+            padding: 0 2rem;
+            text-align: right;
+            padding-bottom: 1rem;
+        }
+    }
+    .nav {
+        width: 65%;
+        transition: width 0.3s;
+        display: flex;
+        background-color: $primary;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 0.9rem;
+        overflow: hidden;
+        .menuItem {
+            text-align: center;
+        }
+    }
+}

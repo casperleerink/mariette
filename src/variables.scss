@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+$font-stack: 'Nunito', sans-serif;
+$text-color: rgb(21, 25, 26);
+$text-color-lighter:rgb(220, 213, 174);
+$text-color-hover: rgb(34, 38, 39);
+$background-color: rgb(246, 247, 253);
+$header-color-background: rgb(34, 38, 39);
+$header-color: rgb(246, 247, 253);
+$standard-padding: 15px;
+
+$primary-color: rgb(240, 240, 252);
+$secondary-color: rgb(34, 38, 39);
+$accent-color: #c73e22;
+
+$text: #08090A;
+$background: #FFF8F0;
+$primary: #F8E5DC;
+$secondary: #D35D64;
+$tertiary: #6D8A96;
+
+@mixin mobile {
+    @media (max-width: 649px) { @content; }
+}
+
+@mixin tablet {
+    @media (min-width: 650px) and (max-width: 999px) { @content; }
+}
+@mixin laptop {
+    @media (min-width: 1000px) { @content; }
+}
+
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0.5;
+    }
+}

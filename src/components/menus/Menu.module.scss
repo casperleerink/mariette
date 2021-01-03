@@ -1,0 +1,49 @@
+.header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    // padding: 0 2%;
+    background-color: $primary;
+
+    .title {
+        width: 250px;
+        display: block;
+        padding: 0 2rem;
+        padding-top: 1.6rem;
+        height: 5rem;
+        a {
+            color: $text-color;
+            font-size: 1rem;
+            font-weight: bold;
+            text-align: center;
+        }
+    }
+    .nav {
+        width: calc(100% - 500px);
+        padding: 2rem;
+        height: 5rem;
+        transition: width 0.3s;
+        display: flex;
+        background-color: $primary;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 0.9rem;
+        overflow: hidden;
+        .menuItem {
+            text-align: center;
+        }
+    }
+}
+
+
+@include tablet {
+    .header {
+        .title {
+            background-color: $tertiary;
+        }
+        .nav {
+            width: calc(100% - 250px);
+        }
+    }
+}

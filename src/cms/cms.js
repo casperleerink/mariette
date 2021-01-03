@@ -1,13 +1,13 @@
 import CMS from 'netlify-cms-app';
 import cloudinary from 'netlify-cms-media-library-cloudinary';
-import Preview from './preview-templates/preview'
+// import Preview from './preview-templates/preview'
 
 
-import styles from '!css-loader!sass-loader!../layout.scss'
-CMS.registerPreviewStyle(styles.toString(), { raw: true });
-CMS.registerPreviewTemplate('home', Preview);
-CMS.registerPreviewTemplate('biographies', Preview);
-CMS.registerPreviewTemplate('performances', Preview);
+// import styles from '!css-loader!sass-loader!../layout.scss'
+// CMS.registerPreviewStyle(styles.toString(), { raw: true });
+// CMS.registerPreviewTemplate('home', Preview);
+// CMS.registerPreviewTemplate('biographies', Preview);
+// CMS.registerPreviewTemplate('performances', Preview);
 CMS.registerMediaLibrary(cloudinary);
 
 

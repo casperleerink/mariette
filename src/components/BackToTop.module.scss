@@ -1,0 +1,28 @@
+.icon {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 2.5rem;
+    @include mobile {
+        font-size: 2rem;
+    }
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    cursor: pointer;
+    color: $text;
+    opacity: 0;
+    transition: 0.5s;
+    // transition: opacity 0.5s;
+    // background-color: $tertiary;
+}
+
+.icon.show {
+    display: flex;
+    opacity: 0.5;
+    animation: fadeIn 0.5s;
+}
+.icon.show:hover {
+    opacity: 1;
+}

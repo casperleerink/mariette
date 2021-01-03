@@ -1,48 +1,75 @@
 backend:
   name: git-gateway
-  repo: casperleerink/breathingbass
-# media_folder: static/assets
+  repo: casperleerink/mariette
 public_folder: /assets
 media_library:
   name: cloudinary
   config:
-    cloud_name: "casperleerink"
-    api_key: "173738255589443"
-    folder:
-      path: "breathingbass"
-logo_url: "https://cdn.dribbble.com/users/610636/screenshots/6454161/sloth_2-01.png"
+    cloud_name: "mariette"
+    api_key: "483161357264143"
+    output_filename_only: true
 collections:
   - label: "Pages" 
     name: "pages"
     files:
       - label: "Home Page"
         name: "home"
-        file: "src/pages/index.md"
+        file: "src/data/index.md"
         fields:
-          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "index-page"}
-          - {label: "body", name: "body", widget: "markdown"}
-      # - label: "About Page"
-      #   name: "about"
-      #   file: "src/pages/about.md"
-      #   fields:
-      #     - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about-page"}
-      #     - {label: "body", name: "body", widget: "markdown"}
-  - label: "Performances"
-    name: "performances"
-    folder: "src/pages/performances"
+          - {label: "key", name: "key", widget: "hidden", default: "index-page"}
+          - {label: "Text", name: "body", widget: "markdown"}
+      - label: "Biografie"
+        name: "over-mij"
+        file: "src/data/over-mij.md"
+        fields:
+          - {label: "key", name: "key", widget: "hidden", default: "about-page"}
+          - {label: "Naam", name: "title", widget: "string", default: "Mariëtte Bastiaansen"}
+          - {label: "Foto", name: "image", widget: "image"}
+          - {label: "Text", name: "body", widget: "markdown"}
+      - label: "On Stage Now!"
+        name: "on-stage-now"
+        file: "src/data/on-stage-now.md"
+        fields:
+          - {label: "key", name: "key", widget: "hidden", default: "on-stage-now"}
+          - {label: "Foto", name: "image", widget: "image"}
+          - {label: "Tarieven", name: "tarieven", widget: "list", field: {label: Tarief, name: tarief, widget: string}}
+          - {label: "Text", name: "body", widget: "markdown"}
+      - label: "Coaching standaard informatie"
+        name: "zangles-informatie"
+        file: "src/data/zangles-informatie.md"
+        fields:
+          - {label: "key", name: "key", widget: "hidden", default: "zangles-informatie"}
+          - {label: "Text", name: "body", widget: "markdown"}
+      - label: "Contact"
+        name: "contact"
+        file: "src/data/contact.md"
+        fields:
+          - {label: "key", name: "key", widget: "hidden", default: "contact"}
+          - {label: "Title", name: "title", widget: "string", default: "Contact"}
+          - {label: "Text", name: "body", widget: "markdown"}
+  - label: "Coaching"
+    name: "coaching"
+    folder: "src/data/coaching"
     create: true
     fields:
-      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "performance-page"}
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Date", name: "date", widget: "datetime", default: "", dateFormat: "DD.MM.YYYY", timeFormat: "hh.mm.a"}
-      - {label: "Main Image", name: "mainImage", widget: "image"}
-      - {label: "Body", name: "body", widget: "markdown"}
-  - label: "Biographies"
-    name: "biographies"
-    folder: "src/pages/biographies"
+      - {label: "Template Key", name: "key", widget: "hidden", default: "coaching"}
+      - {label: "Titel", name: "title", widget: "string"}
+      - {label: "Foto", name: "image", widget: "image"}
+      - {label: "Tarief", name: "tarief", widget: "string"}
+      - {label: "Text", name: "body", widget: "markdown"}
+  - label: "Nieuws"
+    name: "nieuws"
+    folder: "src/data/nieuws"
     create: true
     fields:
-      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about-page"}
-      - {label: "Name", name: "title", widget: "string"}
-      - {label: "Main Image", name: "mainImage", widget: "image"}
-      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Template Key", name: "key", widget: "hidden", default: "nieuws"}
+      - {label: "Titel", name: "title", widget: "string"}
+      - {label: "Datum", name: "date", widget: "datetime", date_format: "DD.MM.YYYY", time_format: ""}
+  - label: "Sopraan"
+    name: "sopraan"
+    folder: "src/data/sopraan"
+    create: true
+    fields:
+      - {label: "Template Key", name: "key", widget: "hidden", default: "sopraan"}
+      - {label: "Titel", name: "title", widget: "string"}
+      - {label: "Text", name: "body", widget: "markdown"}

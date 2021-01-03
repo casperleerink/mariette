@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Breathing Bass`,
-    description: `Breathing Bass is a Vancouver based ensemble playing contemporary music and improvisations. The ensemble members consist of: Kourosh Ghamsari-Esfahani, Katerina Gimon, Chris Blaber and Casper Leerink`,
+    title: `De kunst van het zingen - Mariëtte Bastiaansen`,
+    description: `Zangles in Deventer en omgeving door Mariëtte  Bastiaansen. Voor iedereen die graag wil leren zingen.`,
     author: `Casper Leerink`,
   },
   plugins: [
@@ -9,19 +9,21 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `Mariëtte Bastiaansen`,
+        short_name: `Mariëtte`,
         start_url: `/`,
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/logo_BB.jpg`, // This path is relative to the root of the site.
+        //icon: `src/images/logo_BB.jpg`, // This path is relative to the root of the site.
       },
     },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
-    `gatsby-plugin-sass`,
+    {
+      resolve: `gatsby-plugin-sass`,
+      options: {
+        data: `@import "${__dirname}/src/variables.scss";`,
+      }
+    },
     //google fonts
     {
       resolve: 'gatsby-plugin-web-font-loader',
@@ -44,6 +46,13 @@ module.exports = {
       options: {
         name: 'pages',
         path: `${__dirname}/src/pages`,
+      },
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'data',
+        path: `${__dirname}/src/data`,
       },
     },
     `gatsby-transformer-sharp`,

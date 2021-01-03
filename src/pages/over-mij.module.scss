@@ -1,0 +1,24 @@
+.biography {
+    padding: 2rem;
+
+    h1 {
+        font-size: 2rem;
+        font-weight: normal;
+        margin: 0;
+    }
+}
+.title {
+    padding: 2rem;
+    h1 {
+        font-weight: normal;
+        font-size: 2rem;
+        text-align: center;
+        @include tablet {
+            font-size: 3rem;
+        }
+    }
+}
+
+.image {
+    padding: 4rem;
+}

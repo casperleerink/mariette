@@ -1,57 +1,66 @@
 //See: https://www.gatsbyjs.org/docs/use-static-query/
-import React from "react"
+import React, {useEffect, useState} from "react"
 import PropTypes from "prop-types"
-import {useStaticQuery, graphql} from "gatsby"
+// import {useStaticQuery, graphql} from "gatsby"
+import styles from "./layout.module.scss"
+import Menu from "./menus/Menu";
+import MobileMenu from "./menus/MobileMenu";
+import Banner from "./Banner";
+import Footer from "./Footer";
+import BackToTop from "./BackToTop";
 
-import Menu from "./menu"
-import "@fortawesome/fontawesome-svg-core/styles.css";
-import "../layout.scss";
-import { config } from "@fortawesome/fontawesome-svg-core";
-config.autoAddCss = false;
 
-
-const Layout = ({children}) => {
-  const images = useStaticQuery(graphql`
-    query BackgroundQuery {
-      allFile(filter: {absolutePath: {regex: "/assets/background/"}}) {
-        edges {
-          node {
-            relativePath
-          }
-        }
-      }
-    } 
-  `)
-  const topList = ["6%", "7%", "8%", "28%", "45%", "43%", "80%", "65%"];
-  const leftList = ["10%", "35%", "70%", "8%", "35%", "66%", "50%", "15%"];
-  const backgroundImages = images.allFile.edges.map((item, index) => {
-    const styleTop = topList[index];
-    const styleLeft = leftList[index];
-    const styleSize = Math.floor(Math.random() * 5) + 15 + "%";
-    // const styleSize = "20%";
+const Layout = ({children, top, left, right, contact}) => {
+  const [device, setDevice] = useState("");
+  useEffect(() => {
+    const w = window.innerWidth;
+    if (w < 650) {
+      setDevice("mobile");
+    } else if (w < 1000) {
+      setDevice("tablet");
+    } else {
+      setDevice("laptop");
+    }
+  }, []);
+  const Mobile = () => {
     return (
-      <img 
-        src={`/assets/${item.node.relativePath}`} 
-        style={{
-          top: styleTop,
-          left: styleLeft,
-          width: styleSize,
-          height: 'auto',
-        }}
-        alt="background instruments"
-      />
-    )
-  });
-  return (
-    <div className="layout-container" >
-      <Menu />
-      <main className="main-content">
-        <div className="background-images">
-          {backgroundImages}
+      <>
+        <MobileMenu />
+        <div className={styles.top}>{top}</div>
+        <div className={styles.left}>{left}</div>
+        <div className={styles.right}>{right}</div>
+        <div className={styles.content}>
+          {children}
         </div>
-        {children}
-      </main>
-    </div>
+      </>
+    )
+  }
+  const Laptop = () => {
+    return (
+      <>
+        <Menu/>
+        <div className={styles.main}>
+          <div className={styles.top}>{top}</div>
+          <Banner className={styles.banner}/>
+          <div className={styles.right}>{right}</div>
+          <div className={styles.left}>{left}</div>
+        </div>
+        <div className={styles.content}>
+          {children}
+        </div>
+      </>
+    )
+  }
+  return (
+    <>
+      {device && 
+        <>
+          {device === "mobile" ? <Mobile/> : <Laptop/>}
+          {!contact && <Footer/>}
+          <BackToTop />
+        </>
+      }
+    </>
   )
 }
 

@@ -1,0 +1,100 @@
+.header {
+    display: block;
+    width: 100%;
+    background-color: $tertiary;
+    .titleContainer {
+        width: 75%;
+        height: 4rem;
+        float: left;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $text-color;
+        background-color: $tertiary;
+        font-size: 1.2rem;
+        font-weight: bold;
+        text-align: center;
+    }
+    .bars {
+        width: 25%;
+        cursor: pointer;
+        float: left;
+        height: 4rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $tertiary;
+        transition: 1s;
+
+        svg {
+            font-size: 2rem;
+        }
+    }
+    .expansion {
+        width: 100%;
+        display: flex;
+        align-items: stretch;
+        // height: 320px;
+        .banner {
+            width: 100%;
+            background-color: $tertiary;
+            padding-bottom: 2rem;
+            overflow: hidden;
+            padding-right: 25%;
+            transition: 0.3s;
+            .dahlia {
+                opacity: 0.09;
+                width: 100%;
+                padding: 0 20%;
+                path {
+                    pointer-events: all;
+                }
+                path:hover {
+                    fill: $primary;
+                }
+            }
+            q {
+                display: block;
+                width: 100%;
+                padding: 0 20%;
+                text-align: center;
+                font-size: 1.2rem;
+            }
+            em {
+                display: block;
+                width: 100%;
+                padding: 0 20%;
+                text-align: right;
+                padding-bottom: 1rem;
+            }
+        }
+        .nav {
+            width: 0%;
+            transition: width 0.3s;
+            display: flex;
+            background-color: $primary;
+            flex-direction: column;
+            justify-content: space-around;
+            font-size: 0.8rem;
+            overflow: hidden;
+            .menuItem {
+                text-align: center;
+            }
+        }
+    }
+}
+
+.expanded {
+    .bars {
+        background-color: $primary;
+    }
+    .expansion {
+        .banner {
+            width: 75%;
+            padding-right: 0%;
+        }
+        .nav {
+            width: 25%;
+        }
+    }
+}
