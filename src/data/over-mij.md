@@ -1,7 +1,8 @@
 ---
 key: about-page
 title: Mariëtte Bastiaansen
-image: website/test.jpg
+image: >-
+  https://res.cloudinary.com/mariette/image/upload/v1605145337/website/marietteProfiel_gszck2.jpg
 ---
 
 Als kleuter was ik al een enthousiaste zangeres. Ik herinner me nu nog altijd de vele liedjes die ik als kind zong op de kleuterschool. Later op de katholieke meisjesschool, die gerund werd door nonnen, was zingen een onderdeel van het lesprogramma. Zingen is een deel van mijn leven geworden.
