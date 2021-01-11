@@ -68,9 +68,18 @@ collections:
       - {label: "Datum", name: "date", widget: "datetime", date_format: "DD.MM.YYYY", time_format: ""}
   - label: "Sopraan"
     name: "sopraan"
-    folder: "src/data/sopraan"
-    create: true
-    fields:
-      - {label: "Template Key", name: "key", widget: "hidden", default: "sopraan"}
-      - {label: "Titel", name: "title", widget: "string"}
-      - {label: "Text", name: "body", widget: "markdown"}
+    files:
+      - label: "Muziektheater"
+        name: "muziektheater"
+        file: "src/data/muziektheater.md"
+        fields:
+          - {label: "key", name: "key", widget: "hidden", default: "muziektheater"}
+          - {label: "Titel", name: "title", widget: "string"}
+          - {label: "Text", name: "body", widget: "markdown"}
+      - label: "Solo"
+        name: "solo"
+        file: "src/data/solo.md"
+        fields:
+          - {label: "key", name: "key", widget: "hidden", default: "solo"}
+          - {label: "Titel", name: "title", widget: "string"}
+          - {label: "Text", name: "body", widget: "markdown"}

@@ -1,5 +1,5 @@
 ---
-key: sopraan
+key: muziektheater
 title: Muziektheater
 ---
 

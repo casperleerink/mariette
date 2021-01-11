@@ -4,4 +4,5 @@ title: Muziekles
 image: website/test.jpg
 tarief: ""
 ---
-lorem ipsum!
+
+Informatie over muziekles...

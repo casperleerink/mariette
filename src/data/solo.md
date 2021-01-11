@@ -1,5 +1,5 @@
 ---
-key: sopraan
+key: solo
 title: Solo
 ---
 ## Rouw en Trouw

@@ -3,16 +3,34 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import styles from './contact.module.scss'
 import {graphql} from 'gatsby'
+import CImage from '../components/CImage'
 const ContactPage = ({data}) => {
     const {html, frontmatter} = data.markdownRemark;
     return (
-        <Layout right={
+        <Layout 
+          top={
+            <div className={styles.title}>
+              <h1>Contact</h1>
+            </div>
+          }
+          left={
             <div className={styles.content}>
-                <h1>{frontmatter.title}</h1>
                 <div dangerouslySetInnerHTML={{__html: html}}/>
             </div>
-        } contact={true}>
-            <SEO title="Contact"/>
+          } 
+          right={
+            <div className={styles.right}>
+              <CImage 
+                cloudName="mariette" 
+                photoId={frontmatter.image}
+                className={styles.image}
+                crop="scale"
+              />
+            </div>
+          }
+          contact={true}
+        >
+          <SEO title="Contact"/>
             
         </Layout>
     )
@@ -26,6 +44,7 @@ export const contactPageQuery = graphql`
       html
       frontmatter {
         title
+        image
       }
     }
   }
