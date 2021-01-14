@@ -1,9 +1,9 @@
 ---
 key: about-page
 title: Mariëtte Bastiaansen
-image: website/marietteProfiel_gszck2.jpg
+image: >-
+  https://res.cloudinary.com/mariette/image/upload/v1605144555/website/marietteheader2_r3tm6w.png
 ---
-
 Als kleuter was ik al een enthousiaste zangeres. Ik herinner me nu nog altijd de vele liedjes die ik als kind zong op de kleuterschool. Later op de katholieke meisjesschool, die gerund werd door nonnen, was zingen een onderdeel van het lesprogramma. Zingen is een deel van mijn leven geworden.
 
 Inspiratie om uiting te geven aan mijn manier van musiceren kreeg, ik vooral van het contact met het buitenleven. In de natuur voelde ik me vrij en kreeg ik de energie die ik nodig had om mijn gevoel en emotie te laten zien en horen tijdens het zingen. Na de middelbare school koos ik daarom voor een opleiding die met groen te maken had. Ik begon een opleiding als hovenier. Tijdens deze groene studie en latere werk als hovenier bleef ik mijn zang- en piano lessen voortzetten en bleef de wens om een vakstudie aan het conservatorium te volgen een droom.
