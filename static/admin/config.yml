@@ -10,62 +10,105 @@ media_library:
     api_key: "483161357264143"
     output_filename_only: true
 collections:
-  - label: "Pages" 
+  - label: "Pages"
     name: "pages"
     files:
       - label: "Home Page"
         name: "home"
         file: "src/data/index.md"
         fields:
-          - {label: "key", name: "key", widget: "hidden", default: "index-page"}
-          - {label: "Text", name: "body", widget: "markdown"}
+          - {
+              label: "key",
+              name: "key",
+              widget: "hidden",
+              default: "index-page",
+            }
+          - { label: "Foto", name: "image", widget: "image" }
+          - { label: "Text", name: "body", widget: "markdown" }
       - label: "Biografie"
         name: "over-mij"
         file: "src/data/over-mij.md"
         fields:
-          - {label: "key", name: "key", widget: "hidden", default: "about-page"}
-          - {label: "Naam", name: "title", widget: "string", default: "Mariëtte Bastiaansen"}
-          - {label: "Foto", name: "image", widget: "image"}
-          - {label: "Text", name: "body", widget: "markdown"}
-      - label: "On Stage Now!"
-        name: "on-stage-now"
-        file: "src/data/on-stage-now.md"
-        fields:
-          - {label: "key", name: "key", widget: "hidden", default: "on-stage-now"}
-          - {label: "Foto", name: "image", widget: "image"}
-          - {label: "Tarieven", name: "tarieven", widget: "list", field: {label: Tarief, name: tarief, widget: string}}
-          - {label: "Text", name: "body", widget: "markdown"}
+          - {
+              label: "key",
+              name: "key",
+              widget: "hidden",
+              default: "about-page",
+            }
+          - {
+              label: "Naam",
+              name: "title",
+              widget: "string",
+              default: "Mariëtte Bastiaansen",
+            }
+          - { label: "Foto", name: "image", widget: "image" }
+          - { label: "Text", name: "body", widget: "markdown" }
       - label: "Coaching standaard informatie"
         name: "zangles-informatie"
         file: "src/data/zangles-informatie.md"
         fields:
-          - {label: "key", name: "key", widget: "hidden", default: "zangles-informatie"}
-          - {label: "Text", name: "body", widget: "markdown"}
+          - {
+              label: "key",
+              name: "key",
+              widget: "hidden",
+              default: "zangles-informatie",
+            }
+          - { label: "Text", name: "body", widget: "markdown" }
       - label: "Contact"
         name: "contact"
         file: "src/data/contact.md"
         fields:
-          - {label: "key", name: "key", widget: "hidden", default: "contact"}
-          - {label: "Title", name: "title", widget: "string", default: "Contact"}
-          - {label: "Text", name: "body", widget: "markdown"}
+          - { label: "key", name: "key", widget: "hidden", default: "contact" }
+          - {
+              label: "Title",
+              name: "title",
+              widget: "string",
+              default: "Contact",
+            }
+          - { label: "Text", name: "body", widget: "markdown" }
   - label: "Coaching"
     name: "coaching"
     folder: "src/data/coaching"
     create: true
     fields:
-      - {label: "Template Key", name: "key", widget: "hidden", default: "coaching"}
-      - {label: "Titel", name: "title", widget: "string"}
-      - {label: "Foto", name: "image", widget: "image"}
-      - {label: "Tarief", name: "tarief", widget: "string"}
-      - {label: "Text", name: "body", widget: "markdown"}
+      - {
+          label: "Template Key",
+          name: "key",
+          widget: "hidden",
+          default: "coaching",
+        }
+      - { label: "Titel", name: "title", widget: "string" }
+      - { label: "Foto", name: "image", widget: "image" }
+      - { label: "Tarief", name: "tarief", widget: "string" }
+      - { label: "Text", name: "body", widget: "markdown" }
+  - label: "On Stage Now!"
+    name: "on-stage-now"
+    folder: "src/data/on-stage-now"
+    create: true
+    fields:
+      - { label: "key", name: "key", widget: "hidden", default: "on-stage-now" }
+      - { label: "Titel", name: "title", widget: "string" }
+      - { label: "Foto", name: "image", widget: "image" }
+      - { label: "Text", name: "body", widget: "markdown" }
   - label: "Nieuws"
     name: "nieuws"
     folder: "src/data/nieuws"
     create: true
     fields:
-      - {label: "Template Key", name: "key", widget: "hidden", default: "nieuws"}
-      - {label: "Titel", name: "title", widget: "string"}
-      - {label: "Datum", name: "date", widget: "datetime", date_format: "DD.MM.YYYY", time_format: ""}
+      - {
+          label: "Template Key",
+          name: "key",
+          widget: "hidden",
+          default: "nieuws",
+        }
+      - { label: "Titel", name: "title", widget: "string" }
+      - {
+          label: "Datum",
+          name: "date",
+          widget: "datetime",
+          date_format: "DD.MM.YYYY",
+          time_format: "",
+        }
   - label: "Sopraan"
     name: "sopraan"
     files:
@@ -73,13 +116,18 @@ collections:
         name: "muziektheater"
         file: "src/data/muziektheater.md"
         fields:
-          - {label: "key", name: "key", widget: "hidden", default: "muziektheater"}
-          - {label: "Titel", name: "title", widget: "string"}
-          - {label: "Text", name: "body", widget: "markdown"}
+          - {
+              label: "key",
+              name: "key",
+              widget: "hidden",
+              default: "muziektheater",
+            }
+          - { label: "Titel", name: "title", widget: "string" }
+          - { label: "Text", name: "body", widget: "markdown" }
       - label: "Solo"
         name: "solo"
         file: "src/data/solo.md"
         fields:
-          - {label: "key", name: "key", widget: "hidden", default: "solo"}
-          - {label: "Titel", name: "title", widget: "string"}
-          - {label: "Text", name: "body", widget: "markdown"}
+          - { label: "key", name: "key", widget: "hidden", default: "solo" }
+          - { label: "Titel", name: "title", widget: "string" }
+          - { label: "Text", name: "body", widget: "markdown" }

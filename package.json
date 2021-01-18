@@ -5,6 +5,7 @@
   "version": "0.1.0",
   "author": "Casper Leerink",
   "dependencies": {
+    "axios": "^0.21.1",
     "cloudinary-react": "^1.6.8",
     "gatsby": "^2.24.85",
     "gatsby-image": "^2.2.39",
@@ -28,6 +29,7 @@
     "netlify-cms-media-library-cloudinary": "^1.3.4",
     "node-sass": "^4.14.1",
     "prop-types": "^15.7.2",
+    "query-string": "^6.13.8",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-helmet": "^5.2.1",

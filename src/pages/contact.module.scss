@@ -1,25 +1,61 @@
 .title {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;   
-    h1 {
-        font-weight: 500;
-        font-size: 2rem;
-        @include tablet {
-            font-size: 3rem;
-        }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  h1 {
+    font-weight: 500;
+    font-size: 2rem;
+    @include tablet {
+      font-size: 3rem;
     }
+  }
 }
 .content {
-    padding: 2rem;
-    
-    h1 {
-        font-size: 2rem;
-        font-weight: normal;
-        margin: 0;
+  padding: 2rem;
+
+  h1 {
+    font-size: 2rem;
+    font-weight: normal;
+    margin: 0;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    label {
+      display: block;
+      padding: 0.5rem 0;
+      width: 100%;
+      input {
+        display: block;
+        border-radius: 0.5rem;
+        width: 100%;
+        border: 1px solid $text;
+      }
+      textarea {
+        display: block;
+        border-radius: 0.5rem;
+        height: 5rem;
+        border: 1px solid $text;
+        width: 100%;
+      }
     }
+    button {
+      background-color: $secondary;
+      border-radius: 1rem;
+      font-size: 0.8rem;
+      font-weight: bold;
+      margin-top: 0.8rem;
+      padding: 0.8rem;
+      transition: padding 0.2s;
+      cursor: pointer;
+      @include tablet {
+        font-size: 1rem;
+      }
+    }
+  }
 }
 .right {
-    padding: 2rem 20%;
+  padding: 2rem 20%;
 }
