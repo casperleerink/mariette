@@ -9,7 +9,7 @@ import Banner from "./Banner"
 import Footer from "./Footer"
 import BackToTop from "./BackToTop"
 
-const Layout = ({ children, top, left, right, contact, location }) => {
+const Layout = ({ children, top, left, right, contact }) => {
   const [device, setDevice] = useState("")
   useEffect(() => {
     const w = window.innerWidth
@@ -51,7 +51,7 @@ const Layout = ({ children, top, left, right, contact, location }) => {
       {device && (
         <>
           {device === "mobile" ? <Mobile /> : <Laptop />}
-          {!contact && <Footer location={location} />}
+          {!contact && <Footer />}
           <BackToTop />
         </>
       )}

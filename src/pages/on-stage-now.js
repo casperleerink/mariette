@@ -5,7 +5,7 @@ import { graphql } from "gatsby"
 import styles from "./on-stage-now.module.scss"
 import CImage from "../components/CImage"
 
-function OnStagePage({ data, location }) {
+function OnStagePage({ data }) {
   const information = data.information
   const topics = data.topics.nodes
   const contentRef = useRef(null)
@@ -34,7 +34,6 @@ function OnStagePage({ data, location }) {
   }
   return (
     <Layout
-      location={location}
       top={
         <div className={styles.title}>
           <h1>On Stage Now!</h1>

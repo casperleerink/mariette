@@ -5,7 +5,7 @@ import { graphql, Link } from "gatsby"
 import styles from "./index.module.scss"
 import CImage from "../components/CImage"
 
-const Index = ({ data, location }) => {
+const Index = ({ data }) => {
   const { html, frontmatter } = data.markdownRemark
   const Cta = () => {
     return (
@@ -26,7 +26,6 @@ const Index = ({ data, location }) => {
   }
   return (
     <Layout
-      location={location}
       top={<Cta />}
       right={
         <div

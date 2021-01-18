@@ -5,7 +5,7 @@ import { graphql } from "gatsby"
 import styles from "./over-mij.module.scss"
 import CImage from "../components/CImage"
 
-const AboutPage = ({ data, location }) => {
+const AboutPage = ({ data }) => {
   const { html, frontmatter } = data.markdownRemark
 
   const Text = () => {
@@ -17,7 +17,6 @@ const AboutPage = ({ data, location }) => {
   }
   return (
     <Layout
-      location={location}
       top={
         <div className={styles.title}>
           <h1>{frontmatter.title}</h1>

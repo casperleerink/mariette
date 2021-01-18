@@ -6,7 +6,7 @@ import styles from "./coaching.module.scss"
 import CImage from "../components/CImage"
 // import CImage from '../components/CImage'
 
-function CoachingPage({ data, location }) {
+function CoachingPage({ data }) {
   const contentRef = useRef(null)
   const [type, setType] = useState("")
   const [showTarief, setShowTarief] = useState(false)
@@ -42,7 +42,6 @@ function CoachingPage({ data, location }) {
   }
   return (
     <Layout
-      location={location}
       top={
         <div className={styles.title}>
           <h1>Coaching</h1>

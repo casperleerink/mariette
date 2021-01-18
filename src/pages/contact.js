@@ -5,7 +5,7 @@ import styles from "./contact.module.scss"
 import { graphql } from "gatsby"
 import CImage from "../components/CImage"
 import Form from "../components/Form"
-const ContactPage = ({ data, location }) => {
+const ContactPage = ({ data }) => {
   const { html, frontmatter } = data.markdownRemark
   return (
     <Layout
@@ -17,7 +17,7 @@ const ContactPage = ({ data, location }) => {
       left={
         <div className={styles.content}>
           <div dangerouslySetInnerHTML={{ __html: html }} />
-          <Form location={location} />
+          <Form />
         </div>
       }
       right={

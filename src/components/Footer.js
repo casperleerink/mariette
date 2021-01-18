@@ -4,7 +4,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import moment from "moment"
 import Form from "./Form"
 
-function Footer({ location }) {
+function Footer() {
   const data = useStaticQuery(graphql`
     query FooterQuery {
       contact: markdownRemark(frontmatter: { key: { eq: "contact" } }) {
@@ -32,7 +32,7 @@ function Footer({ location }) {
       <div className={styles.contact}>
         <h1>{contact.frontmatter.title}</h1>
         <div dangerouslySetInnerHTML={{ __html: contact.html }} />
-        <Form location={location} />
+        <Form />
       </div>
       <div className={styles.nieuws}>
         {nieuws.nodes.length > 0 && <h1>Nieuws/Agenda</h1>}

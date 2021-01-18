@@ -4,11 +4,10 @@ import SEO from "../components/seo"
 import { graphql } from "gatsby"
 import styles from "./sopraan.module.scss"
 
-function Sopraan({ data, location }) {
+function Sopraan({ data }) {
   const { solo, muziektheater } = data
   return (
     <Layout
-      location={location}
       top={
         <div className={styles.title}>
           <h1>Sopraan</h1>
