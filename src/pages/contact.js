@@ -17,7 +17,7 @@ const ContactPage = ({ data }) => {
       left={
         <div className={styles.content}>
           <div dangerouslySetInnerHTML={{ __html: html }} />
-          <Form />
+          {/* <Form /> */}
         </div>
       }
       right={

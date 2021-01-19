@@ -6,10 +6,11 @@ function Form() {
     <form
       data-netlify="true"
       className={style.form}
-      name="Contact Form"
+      name="contact-form"
       method="POST"
+      action="/success"
     >
-      <input type="hidden" name="form-name" value="Contact Form" />
+      <input type="hidden" name="form-name" value="contact-form" />
       <label>
         E-mail
         <input type="email" name="email" />
