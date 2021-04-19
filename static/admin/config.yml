@@ -54,6 +54,17 @@ collections:
               default: "zangles-informatie",
             }
           - { label: "Text", name: "body", widget: "markdown" }
+      - label: "On Stage Now informatie"
+        name: "on-stage-now-informatie"
+        file: "src/data/on-stage-now.md"
+        fields:
+          - {
+              label: "key",
+              name: "key",
+              widget: "hidden",
+              default: "on-stage-now-informatie",
+            }
+          - { label: "Text", name: "body", widget: "markdown" }
       - label: "Contact"
         name: "contact"
         file: "src/data/contact.md"
