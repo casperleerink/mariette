@@ -1,6 +1,7 @@
 ---
 key: index-page
-image: website/test.jpg
+image: >-
+  https://res.cloudinary.com/mariette/image/upload/v1668182903/3C14D86C-103F-4AE5-BF18-BC46E18CF90F_g1w6ob.jpg
 ---
 
 *“Zingen is een kunst, maar soms is het ook een kunst om te zingen”.*
