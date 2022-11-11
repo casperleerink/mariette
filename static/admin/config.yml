@@ -77,6 +77,7 @@ collections:
               default: "Contact",
             }
           - { label: "Text", name: "body", widget: "markdown" }
+          - { label: "Foto", name: "image", widget: "image" }
   - label: "Coaching"
     name: "coaching"
     folder: "src/data/coaching"
