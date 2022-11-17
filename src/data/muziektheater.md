@@ -2,11 +2,10 @@
 key: muziektheater
 title: Muziektheater
 ---
+## De Dahlia's, de Oma's en de Heksen
 
-## Dahlia's
+Drie verschillende muziektheater voorstellingen voor jong en oud.
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae aspernatur porro aperiam ipsa ratione recusandae doloribus, nobis soluta quia sunt nulla similique ipsum incidunt sequi saepe quidem? Aut, magni culpa.
+O﻿p verzoek spelen mijn collega Luisella Lai en ik een op maat muziektheater voorstelling. Wilt u meer informatie of een boeking maken? Kijkt u dan op de website van Luisella:
 
-## Oma's
-
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae aspernatur porro aperiam ipsa ratione recusandae doloribus, nobis soluta quia sunt nulla similique ipsum incidunt sequi saepe quidem? Aut, magni culpa.
+w﻿ww.dramastrada.nl
