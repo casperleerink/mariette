@@ -1,15 +1,17 @@
 ---
 key: solo
-title: Solo
+title: Solo zingen bij bijzondere momenten
 ---
-## Rouw en Trouw
+## A﻿fscheid nemen
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae aspernatur porro aperiam ipsa ratione recusandae doloribus, nobis soluta quia sunt nulla similique ipsum incidunt sequi saepe quidem? Aut, magni culpa.
+M﻿ocht u een waardevol afscheid met live muziek willen omlijsten dan kom ik graag zingen. Een favoriete aria, een mooi chanson, musical en een ballad. Veel mogelijkheden zijn bespreekbaar. Met of zonder begeleiding op piano of gitaar. Ik sta open voor uw vragen.
+
+
 
 ## Recital
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae aspernatur porro aperiam ipsa ratione recusandae doloribus, nobis soluta quia sunt nulla similique ipsum incidunt sequi saepe quidem? Aut, magni culpa.
+Voor een klein recital tijdens de opening van een tentoonstelling of tijdens een memorabel moment in uw leven. Op verzoek kom ik met een speciaal programma voor u zingen.   
 
 ## Kooruitvoering
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae aspernatur porro aperiam ipsa ratione recusandae doloribus, nobis soluta quia sunt nulla similique ipsum incidunt sequi saepe quidem? Aut, magni culpa.
+Z﻿oekt u een soliste bij een optreden van uw koor dan kom ik met plezier onder uw leiding meedoen.
